@@ -10,7 +10,7 @@ int first, second, sum; printf("Enter two integers to add\n"); scanf("%d%d", &fi
 
 }
 
-Output:
+ Output:
 
 Enter two integers to add
 
@@ -20,7 +20,7 @@ Enter two integers to add
 
 Sum of entered numbers = 9
 
------------------------------02.Average Of N Numbers:
+## 02.Average Of N Numbers:
 
 #include <stdio.h>
 
@@ -38,9 +38,9 @@ Enter the numbers of elements:6
 
 Enter number: 45.3Enter number: 67.5Enter number: -45.6Enter number: 20.34Enter number: 33Enter number: 45.6
 
-Average = 27.69
+average of numbers 27.69
 
------------------------------03.Days Of Week:
+## 03.Days Of Week:
 
 #include <stdio.h>
 
@@ -52,13 +52,13 @@ int week; printf("Enter week number(1-7): "); scanf("%d", &week); switch(week) {
 
 }
 
-Output:
+ Output:
 
 Enter week number(1-7): 7
 
 Sunday
 
------------------------------04.Finding Odd Or Even:
+## 04.Finding Odd Or Even:
 
 #include <stdio.h>
 
@@ -78,7 +78,7 @@ Enter an integer
 
 Odd
 
------------------------------05.Table Using For Loop:
+## 05.Table Using For Loop:
 
 #include <stdio.h>
 
@@ -114,7 +114,7 @@ Enter an integer: 9
 
 9 * 10 = 90
 
------------------------------06.Armstrong Number:
+## 06.Armstrong Number:
 
 #include<stdio.h>
 
@@ -134,7 +134,7 @@ enter any positive integer number
 
 153 is a armstrong number
 
------------------------------07.Calculator:
+## 07.Calculator:
 
 #include <stdio.h>
 
@@ -156,7 +156,7 @@ Enter two operands: 1.5
 
 1.5 * 4.5 = 6.8
 
------------------------------08.Bubble Sort:
+## 08.Bubble Sort:
 
 #include <stdio.h>
 
@@ -200,7 +200,7 @@ Sorted list in ascending order:
 
 8
 
------------------------------09.Binary Search:
+## 09.Binary Search:
 
 #include<stdio.h>
 
@@ -242,9 +242,9 @@ whether it is present or not in entered array
 
 6
 
-element is found at the position 6
+element is found at the position 
 
------------------------------10.Factorial Of A Number:
+## 10.Factorial Of A Number:
 
 #include <stdio.h>
 
