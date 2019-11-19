@@ -1,4 +1,4 @@
-1.Adding 2 Integers:
+## 1.Adding 2 Integers:
 
 #include <stdio.h>
 
