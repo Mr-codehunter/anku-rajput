@@ -266,3 +266,258 @@ Enter a number to calculate it's factorial
 
 !6 = 720
 
+## 11.FizzBuzz:
+
+#include<stdio.h>
+
+int main()
+
+{ for(int i=1;i<=30;i++) { if(i%15==0) printf("fizzbuzz\n"); else if(i%5==0) printf("buzz\n"); else if(i%3==0) printf("fizz\n"); else {printf("%d\n",i); } } return 0; 
+
+}
+
+Output:
+
+1
+
+2
+
+fizz
+
+## 12.Sum of First 100 Numbers:
+
+#include <stdio.h>
+
+int main()
+
+{
+
+int n, i, sum = 0; printf("Enter a positive integer: "); scanf("%d",&n); for(i=1; i <= n; ++i) { sum += i; // sum = sum+i; } printf("Sum = %d",sum); return 0; 
+
+}
+
+Output:
+
+Enter a positive integer: 100
+
+Sum = 5050
+
+## 13.Greater Of 2 Numbers:
+
+#include<stdio.h>
+
+void main()
+
+{
+
+float a,b; printf("enter first number\n"); scanf("%f",&a); printf("enter the second nummber\n"); scanf("%f",&b); if(a>b) printf("%f is greater\n",a); else if(b>a) printf("%f is greater\n",b); else printf("both numbers are equal\n"); 
+
+}
+
+Output:
+
+enter first number
+
+3
+
+enter the second nummber
+
+3
+
+both numbers are equal
+
+## 14.Greater Of 3 Numbers:
+
+#include<stdio.h>
+
+void main()
+
+{
+
+int a,b,c; printf("enter the three numbers which you want to compare \n"); scanf("%d%d%d",&a,&b,&c); if(a>b&&a>c) printf("\n%d is the greatest number\n",a); else if(b>a&&b>c) printf("\n%d is the greatest number\n",b); else printf("\n%d is the greatest number\n",c); 
+
+}
+
+Output:
+
+enter the three numbers which you want to compare
+
+1
+
+13
+
+8
+
+13 is the greatest number
+
+## 15.GCD Of Numbers:
+
+#include<stdio.h>
+
+int main() {
+
+int m,n,r=1; printf("\n Enter value for m,n\n"); scanf("%d%d",&m,&n); while(r!=0) { r=n%m; n=m; m=r; } printf("\n GCD=%d \n",n); return 0; 
+
+}
+
+Output:
+
+Enter value for m,n
+
+12 14
+
+GCD=2
+
+## 16.Leap Year Or Not:
+
+#include<stdio.h>
+
+int main()
+
+{ int a;
+
+printf("enter the year\n"); scanf("%d",&a); if(a%4==0) printf("it is a leap year\n"); else printf("it is not a leap year\n"); 
+
+}
+
+Output:
+
+enter the year
+
+2019
+
+it is not a leap year
+
+enter the year
+
+2020
+
+it is a leap year
+
+## 17.Linear Search:
+
+#include <stdio.h>
+
+int main()
+
+{
+
+int array[100], search, c, n; printf("Enter the number of elements in array\n"); scanf("%d",&n); printf("Enter %d integer(s)\n", n); for (c = 0; c < n; c++) scanf("%d", &array[c]); printf("Enter the number to search\n"); scanf("%d", &search); for (c = 0; c < n; c++) { if (array[c] == search) { printf("%d is present at location %d.\n", search, c+1); break; } } if (c == n) printf("%d is not present in array.\n", search); return 0; 
+
+}
+
+Output:
+
+Enter the number of elements in array
+
+5
+
+Enter 5 numbers
+
+5
+
+6
+
+4
+
+2
+
+9 Enter the number to search
+
+4 is present at location 3.
+
+## 18.Matrix Addition
+#include <stdio.h>
+
+int main()
+
+{
+
+int m, n, c, d, first[10][10], second[10][10], sum[10][10]; printf("Enter the number of rows and columns of matrix\n"); scanf("%d%d", &m, &n); printf("Enter the elements of first matrix\n"); for ( c = 0 ; c < m ; c++ ) for ( d = 0 ; d < n ; d++ ) scanf("%d", &first[c][d]); printf("Enter the elements of second matrix\n"); for ( c = 0 ; c < m ; c++ ) for ( d = 0 ; d < n ; d++ ) scanf("%d", &second[c][d]); for ( c = 0 ; c < m ; c++ ) for ( d = 0 ; d < n ; d++ ) sum[c][d] = first[c][d] + second[c][d]; printf("Sum of entered matrices:-\n"); for ( c = 0 ; c < m ; c++ ) { for ( d = 0 ; d < n ; d++ ) printf("%d\t", sum[c][d]); printf("\n"); } return 0; 
+
+}
+
+Output:
+
+Enter the number of rows and columns of matrix
+
+2
+
+2
+
+Enter the elements of first matrix
+
+1 2
+
+3 4
+
+Enter the elements of second matrix
+
+5 6
+
+2 1
+
+Sum of entered matrices:-
+
+6 8
+
+5 5
+
+## 19.Transpose Of Matrix:
+
+#include <stdio.h>
+
+int main()
+
+{
+
+int m, n, c, d, matrix[10][10], transpose[10][10]; printf("Enter the number of rows and columns of matrix \n "); scanf("%d%d",&m,&n); printf("Enter the elements of matrix \n"); for( c = 0 ; c < m ; c++ ) { for( d = 0 ; d < n ; d++ ) { scanf("%d",&matrix[c][d]); } } for( c = 0 ; c < m ; c++ ) { for( d = 0 ; d < n ; d++ ) { transpose[d][c] = matrix[c][d]; } } printf("Transpose of entered matrix :-\n"); for( c = 0 ; c < n ; c++ ) { for( d = 0 ; d < m ; d++ ) { printf("%d\t",transpose[c][d]); } printf("\n"); } return 0; 
+
+}
+
+Output:
+
+Enter the number of rows and columns of matrix
+
+2
+
+3
+
+Enter the elements of matrix
+
+1 2 3
+
+4 5 6
+
+Transpose of entered matrix :-
+
+1 4
+
+2 5
+
+3 6
+
+## 20.Sum Of Digit Of Number:
+
+#include<stdio.h>
+
+int main()
+
+{
+
+int a,sum=0,c; printf("enter the number\n"); scanf("%d",&a); while(a!=0) { c=a%10; sum+=c; a=a/10; } printf("sum of digits is %d\n",sum); 
+
+}
+
+Output:
+
+enter the number
+
+265
+
+sum of digits is 13
+
+## **************         **************
+
+
+
