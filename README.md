@@ -1,4 +1,4 @@
-# PROGRAMMING FOR PROGRAM SOLVING ESC-18105**
+# Programming For Problem Solving ESC-18105**
 ## NAME-Ankita
 ## ROLL NO-1921010
 ## BRANCH-IT
